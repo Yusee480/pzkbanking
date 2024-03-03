@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .head{
+            padding: 40px;
+            background-color: forestgreen;
+            border: 0px;
+            border-radius: 0px 0px 300px 300px;
+        }
+        .Have{
+            position: absolute;
+            color: white;
+            margin-top: -20px;
+            margin-left: 25%;
+
+        }
+        a{
+            position: absolute;
+            margin-top: -30px;
+            margin-left: -20px;
+            text-decoration: none;
+        }
+        .head:hover{
+            padding-bottom: 70px;
+        }
+        .input{
+            padding: 10px 20px;
+            border: 2px solid forestgreen;
+            border-radius: 0px 0px 10px 10px;
+            width: 60%;
+        }
+        .center{
+            margin-left: 20%;
+        }
+        select{
+            padding: 8px 3px;
+            border-radius: 0px 0px 10px 10px;
+            border: 2px solid forestgreen;
+        }
+        .last{
+            margin-left: 20%;
+        }
+        button{
+            padding: 15px 40px;
+            margin-left: 15%;
+            background-color: forestgreen;
+            color: white;
+            border: 0px;
+            border-radius: 0px 0px 10px 10px;
+        }
+       input:hover{
+            border: 3px solid forestgreen;
+        }
+        select:hover{
+            border: 3px solid forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <a href="inbox.html" class="fa fa-close" style="font-size: x-large;color: white;"></a>
+        <h2 class="Have">MARKAZUL SALAFIA</h2>
+    </div>
+    <br><br>
+    <h2 style="margin-left: 20px;">Create Your Account</h2>
+    <br><br>
+    <form action="register.php" method="POST">
+        <div class="center">
+            <label for="fullname">Full name</label><br>
+            <input class="input" type="text" id="fullname" name="fullname" required><br>
+            <!-- Other input fields -->
+        </div>
+        <br>
+        <div class="last">
+            <input class="input2" type="checkbox" required>
+            <label for="terms">I Agree with the Terms of service & Privacy policy</label><br><br>
+            <input class="input2" type="checkbox" name="member">
+            <label for="member">I am Registering as a member</label>
+            <br><br>
+            <button type="submit">Create Account</button>
+        </div>
+    </form>
+    
+</body>
+</html>
